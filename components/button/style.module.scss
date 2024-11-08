@@ -1,0 +1,15 @@
+.button {
+    cursor: pointer;
+    margin: 0 auto;
+    cursor: pointer;
+    margin-top: 50px;
+    font-size: 22px;
+    font-weight: 300;
+    background-color: #f2c94c;
+    padding: 15px;
+    border-radius: 20px 5px 20px 5px;
+    @media (max-width: 390px) {
+      font-size: 16px;
+      padding: 10px;
+    }
+  }

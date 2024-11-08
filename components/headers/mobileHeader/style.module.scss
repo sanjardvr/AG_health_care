@@ -1,0 +1,92 @@
+.header {
+  z-index: 9999999;
+  width: 100%;
+  background: transparent;
+  position: relative;
+}
+.headerContainer {
+  background: transparent;
+  width: 100%;
+}
+
+.headerActive {
+  position: fixed;
+  top: 0px;
+  width: 100%;
+  background: #f8d982;
+  height: 100vh;
+}
+
+.headerTop {
+  display: flex;
+  justify-content: space-between;
+  padding: 50px 100px 0px 100px;
+  @media (max-width:540px) {
+    padding: 50px 50px 0px 50px;
+}
+  .logo {
+    color: #8ea4f4;
+    font-size: 32px;
+    font-weight: 500;
+  }
+  .icon {
+    width: 32px;
+    height: 32px;
+  }
+}
+.navbar {
+  display: none;
+}
+.navbarActive {
+  z-index: 9999 !important;
+  box-sizing: border-box;
+  background: #f8d982;
+  padding: 0 50px;
+  margin-top: 30px;
+  .profile {
+    width: 40px;
+    height:40px;
+    border-radius: 50%;
+    background-color: #8ea4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .accountIcon {
+      width: 28px;
+      height: 28px;
+      color: #fff;
+    }
+  }
+  .nav {
+    margin-top: 50px;
+    font-size: 20px;
+    .menu{
+        margin-top: 30px;
+    }
+  }
+  .bottom {
+    position: absolute;
+    bottom: 40px;
+    width: 100vw;
+    margin-left: -45px;
+    .top{
+        display: flex;
+        justify-content: space-around;
+        align-items: flex-start;
+        .item{
+           font-size: 14px;
+           font-weight: 200;
+        }
+    }
+    .down{
+        margin-top: 30px;
+        text-align: center;
+        letter-spacing: 20px;
+        opacity: 0.3;
+        @media (max-width:540px) {
+            letter-spacing: 10px;
+        }
+    }
+  }
+
+}
