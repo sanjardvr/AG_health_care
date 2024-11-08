@@ -1,0 +1,21 @@
+.wrapper{
+
+    display: flex;
+    flex-direction: column;
+    .text_box{
+        .text{
+            font-size: 32px;
+        }
+        .img{
+            img{
+                width: 50%;
+                height: auto;
+                
+            }
+        }
+    }
+    .button{
+        cursor: pointer;
+    }
+    
+}
