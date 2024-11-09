@@ -57,6 +57,7 @@
 		margin-bottom: 2rem;
 	}
 }
+
 .animationBox {
 	margin-top: 5rem;
 	display: flex;
@@ -74,22 +75,6 @@
 	object-fit: cover;
 	border-radius: 8px;
 }
-
-// .modify_img {
-// 	max-width: 140px;
-// 	aspect-ratio: 1;
-// 	margin-top: -200px;
-// 	animation: rotateInf infinite 14s;
-// }
-
-// .animationBox {
-// 	width: 50px;
-// 	height: 50px;
-// 	display: flex;
-// 	gap: 3.3rem;
-// 	justify-content: center;
-// 	align-items: start;
-// }
 
 .text {
 	font-size: 1.2rem;
@@ -127,5 +112,100 @@
 	.button {
 		width: 80%;
 		padding: 10px;
+	}
+}
+
+// Diet Plan page
+//Header styling start:
+.header {
+	height: 100vh;
+	background: linear-gradient(to right, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.7)),
+		center/cover no-repeat fixed;
+}
+.navbar {
+	background: rgba(0, 0, 0, 0.6);
+	padding: 1.2rem;
+	display: flex;
+}
+.navigation {
+	display: flex;
+	justify-content: space-between;
+	flex: 1;
+}
+
+.a_link {
+	color: #fff1f1;
+	font-size: 2rem;
+	display: block;
+	text-decoration: none;
+	font-family: Arial, Helvetica, sans-serif;
+	letter-spacing: 1px;
+}
+
+.navbar_nav {
+	padding: 0.8rem 0 0.2rem 0;
+}
+.navbar_nav {
+	a {
+		text-transform: uppercase;
+		font-family: Arial, Helvetica, sans-serif;
+		letter-spacing: 3px;
+		font-weight: 500;
+		color: #ffff;
+		text-decoration: none;
+		display: inline-block;
+		padding-right: 1.2rem;
+		padding-left: 1.2rem;
+		transition: opacity 0.5s ease;
+	}
+}
+
+.navbar_nav a:hover {
+	opacity: 0.7;
+}
+
+.test {
+	background-color: #5b5858;
+}
+
+.menu_btn {
+	display: none;
+	align-items: center;
+}
+
+.sidebar {
+	position: fixed;
+	right: 0;
+	top: 0;
+	width: 220px;
+	background: rgb(60, 60, 60);
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: start;
+	padding: 1rem;
+}
+
+.side_bar_content {
+	display: flex;
+	flex-direction: column;
+	gap: 1.4rem;
+	margin-top: 1.8rem;
+	color: rgb(194, 194, 194);
+	font-size: 1.2rem;
+}
+
+.side_bar_content a:hover {
+	color: white;
+}
+
+//Header styling end
+
+@media (max-width: 768px) {
+	.navbar_nav {
+		display: none;
+	}
+	.menu_btn {
+		display: flex;
 	}
 }
