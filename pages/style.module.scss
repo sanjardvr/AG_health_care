@@ -1,21 +1,131 @@
-.wrapper{
+.wrapper {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	background-color: #f4f5f7;
+	height: 100vh;
+	justify-content: center;
+	overflow: hidden;
+}
 
-    display: flex;
-    flex-direction: column;
-    .text_box{
-        .text{
-            font-size: 32px;
-        }
-        .img{
-            img{
-                width: 50%;
-                height: auto;
-                
-            }
-        }
-    }
-    .button{
-        cursor: pointer;
-    }
-    
+.logo_container {
+	margin: 10px 0;
+}
+
+.logo {
+	font-size: 2rem;
+	font-weight: bold;
+	color: #333;
+	text-align: center;
+}
+
+.image_container {
+	position: relative;
+	width: 100%;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	overflow: hidden;
+}
+
+.img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+.overlay {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: start;
+	align-items: center;
+	background: rgba(0, 0, 0, 0.4);
+	color: white;
+	text-align: center;
+
+	.gradientText {
+		font-size: 50px;
+		background: linear-gradient(to right, rgb(68, 255, 68), rgb(0, 95, 0));
+		color: transparent;
+		background-clip: text;
+		margin-bottom: 2rem;
+	}
+}
+.animationBox {
+	margin-top: 5rem;
+	display: flex;
+	flex-wrap: wrap;
+	gap: 3.3rem;
+	justify-content: center;
+
+	align-items: center;
+	margin-bottom: 5rem;
+}
+
+.modify_img {
+	width: 15%;
+	aspect-ratio: 1;
+	object-fit: cover;
+	border-radius: 8px;
+}
+
+// .modify_img {
+// 	max-width: 140px;
+// 	aspect-ratio: 1;
+// 	margin-top: -200px;
+// 	animation: rotateInf infinite 14s;
+// }
+
+// .animationBox {
+// 	width: 50px;
+// 	height: 50px;
+// 	display: flex;
+// 	gap: 3.3rem;
+// 	justify-content: center;
+// 	align-items: start;
+// }
+
+.text {
+	font-size: 1.2rem;
+	margin-bottom: 15px;
+}
+
+.button {
+	padding: 10px 20px;
+	background-color: #0070f3;
+	color: white;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+	font-size: 1rem;
+	transition: background-color 0.3s ease;
+	border-radius: 15px;
+
+	&:hover {
+		background-color: #005bb5;
+	}
+}
+
+@media (max-width: 768px) {
+	.modify_img {
+		width: 140px;
+	}
+	.wrapper {
+		height: 100vh;
+	}
+
+	.text {
+		font-size: 1rem;
+	}
+
+	.button {
+		width: 80%;
+		padding: 10px;
+	}
 }
