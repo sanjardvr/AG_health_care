@@ -43,23 +43,23 @@ export default function DeitPlan() {
 							<path
 								d='M4 5L20 5'
 								stroke='currentColor'
-								stroke-width='1.5'
-								stroke-linecap='round'
-								stroke-linejoin='round'
+								strokeWidth='1.5'
+								strokeLinecap='round'
+								strokeLinejoin='round'
 							/>
 							<path
 								d='M4 12L20 12'
 								stroke='currentColor'
-								stroke-width='1.5'
-								stroke-linecap='round'
-								stroke-linejoin='round'
+								strokeWidth='1.5'
+								strokeLinecap='round'
+								strokeLinejoin='round'
 							/>
 							<path
 								d='M4 19L20 19'
 								stroke='currentColor'
-								stroke-width='1.5'
-								stroke-linecap='round'
-								stroke-linejoin='round'
+								strokeWidth='1.5'
+								strokeLinecap='round'
+								strokeLinejoin='round'
 							/>
 						</svg>
 					</button>
