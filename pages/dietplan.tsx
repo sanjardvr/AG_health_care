@@ -18,13 +18,13 @@ export default function DeitPlan() {
 				<nav className={style.navbar}>
 					<div className={style.navigation}>
 						<div className={style.deitplan}>
-							<a className={style.a_link} href='http://localhost:3000/dietplan'>
+							<a className={style.a_link} href='/dietplan'>
 								Diet Plan
 							</a>
 						</div>
 						<div className={style.navbar_nav}>
 							<a href='#'>Shopping List</a>
-							<a href='#'>Popular Recipts</a>
+							{/* <a href='#'>Popular Recipts</a> */}
 							<a href='#'>Notifications</a>
 						</div>
 					</div>
@@ -89,7 +89,7 @@ export default function DeitPlan() {
 
 							<div className={style.side_bar_content}>
 								<a href='#'>Shopping List</a>
-								<a href='#'>Popular Recipts</a>
+								{/* <a href='#'>Popular Recipts</a> */}
 								<a href='#'>Notifications</a>
 							</div>
 						</div>
