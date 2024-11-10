@@ -2,11 +2,13 @@ import { Alert, Box, Snackbar, TextField } from "@mui/material";
 import style from "./style.module.scss";
 import { useRef, useState } from "react";
 import React from "react";
+import { getStrapiURL } from "@/utils";
+import { useRouter } from "next/router";
 
 export default function Login() {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
-
+  const router = useRouter();
   const [active, setActive] = useState(true);
   const [passive, setPassive] = useState(true);
 
@@ -37,46 +39,47 @@ export default function Login() {
 		return; 
 	  }
 
-//     event.preventDefault();
-// 	try {
-// 		const response = await fetch(`https://1991-63-176-105-72.ngrok-free.app/api/registers?filters[email][$eq]=sanjar&filters[password][$eq]=1234`, {
-// 			method: 'GET',
-// 			headers: {
-// 				'Content-Type': 'application/json',
-// 			},
-// 		});
-		
-// 		 // Check if the response is JSON
-// 		 const contentType = response.headers.get("content-type");
-// 		 let result;
-// 		 if (contentType && contentType.includes("application/json")) {
-// 		   result = await response.json();
-// 		 } else {
-// 		   result = await response.text();
-// 		   console.warn("Expected JSON, but received:", result);
-// 		   throw new Error("Received non-JSON response from the server");
-// 		 }
-// 		console.log('Response data -->', result);
+    event.preventDefault();
+	try {
+		const response = await fetch(
+      getStrapiURL(
+         `/https://1991-63-176-105-72.ngrok-free.app/api/registers?filters[email][$eq]=${email}&[password][$eq=${password}`
+      )
+   );
+
+   setEmail('');
+		setPassword('');
+    router.push('/about')
+		 // Check if the response is JSON
+		//  const contentType = response.headers.get("content-type");
+		//  let result;
+		//  if (contentType && contentType.includes("application/json")) {
+		//    result = await response.json();
+		//  } else {
+		//    result = await response.text();
+		//    console.warn("Expected JSON, but received:", result);
+		//    throw new Error("Received non-JSON response from the server");
+		//  }
 	
-// 		if (result.data && result.data.length > 0) {
+		// if (result.data && result.data.length > 0) {
 		  
-// 		  console.log("User found:", result.data[0]); 
+		  //console.log("User found:", result.data[0]); 
 		  
-// 		  setEmail('');
-// 		  setPassword('');
-// 		} else {
+		//   setEmail('');
+		//   setPassword('');
+		// } else {
 		 
-// 		  console.log("No user found with these credentials");
-// 		  alert("Invalid email or password");
-// 		}
-// 		if (!response.ok) {
-// 			throw new Error('Network response was not ok');
-// 		}
-// 		setEmail('')
-// 		setPassword('')
-// 	} catch (error) {
-// 		console.error('Error during API request:', error);
-// 	}
+		//   console.log("No user found with these credentials");
+		//   alert("Invalid email or password");
+		// }
+		if (!response.ok) {
+			throw new Error('Network response was not ok');
+		}
+		setEmail('')
+		setPassword('')
+	} catch (error) {
+		console.error('Error during API request:', error);
+	}
   };
 
 
