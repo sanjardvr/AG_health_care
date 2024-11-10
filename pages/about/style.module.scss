@@ -1,0 +1,100 @@
+.wrapper {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	background-color: #f4f5f7;
+	height: 100vh;
+	justify-content: center;
+	overflow: hidden;
+}
+
+.logo_container {
+	margin: 10px 0;
+}
+
+.logo {
+	font-size: 2rem;
+	font-weight: bold;
+	color: #333;
+	text-align: center;
+}
+
+.image_container {
+	position: relative;
+	width: 100%;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	overflow: hidden;
+}
+
+.img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+.overlay {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	background: rgba(0, 0, 0, 0.6);
+	text-align: center;
+    .form_box{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        input{
+            width: 300px;
+            height: 45px;
+            padding: 4px;
+            font-size: 22px ;
+            border-radius: 5px;
+            background: rgba(194, 218, 194, 0.322);
+            border: solid 5px rgb(66, 137, 66);
+            color : #fff;
+            margin-bottom: 20px;
+        }
+        .goal{
+            align-self: center;
+            width: 340px;
+            height: 60px;
+            padding: 15px;
+            font-size: 22px ;
+            border-radius: 5px;
+            background: rgba(194, 218, 194, 0.322);
+            border: solid 5px rgb(66, 137, 66);
+            color : #fff;
+            margin-bottom: 20px;
+            
+        }
+    }
+    .submit_box{
+        width: 300px;
+        margin-top: 40px;
+        display: flex;
+        justify-content: center;
+        font-size: 20px;
+        div{
+            padding: 13px;
+            text-align: center;
+            width: 130px;
+            height: 45px;
+            border-radius: 15px;
+            cursor: pointer;
+        }
+        .signup{
+           background-color: #59c960;
+
+        }
+    }
+}
+
