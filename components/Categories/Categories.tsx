@@ -102,13 +102,6 @@ const dinnerData = [
 		title: 'Refreshing, Low-calorie, High in antioxidants',
 		href: 'https://t.me/dietdetails',
 	},
-
-	//We can add more in the future, if we want:
-	// {
-	// 	imagePath: '/images/breakfast1.jpg',
-	// 	title: 'No sugar, vegetarian, high-protein',
-	// 	href: 'https://t.me/dietdetails',
-	// },
 ]
 
 const Categories = () => {
