@@ -1,4 +1,4 @@
-import Categories from '@/components/Categories'
+import Categories from '@/components/Categories/Categories'
 import { useRouter } from 'next/router'
 import { useState } from 'react'
 import style from './style.module.scss'
