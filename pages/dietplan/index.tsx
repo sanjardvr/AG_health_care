@@ -1,6 +1,6 @@
-import Categories from '@/components/Categories/Categories'
 import { useRouter } from 'next/router'
 import { useState } from 'react'
+import Categories from '../../components/categories'
 import style from './style.module.scss'
 
 export default function DeitPlan() {
